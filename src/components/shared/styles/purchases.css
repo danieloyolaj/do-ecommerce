@@ -1,0 +1,66 @@
+/* Styles for the Purchases page */
+:root {
+    --primary: #f85555;
+    --light-gray: #dcd9d9;
+    --gray: #c7c7c7;
+    --dark-gray: #4f4f4f;
+    --text-gray: #ababab;
+    --input-bg: #f8f8f8;
+    --input-border: #f1f1f1;
+}
+
+.purchases-container{
+    margin: 100px auto 0 auto; 
+    width: 85%;
+}
+
+.purchases__title{
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.purchases__cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.card-purchase-container{
+    border: 1px solid var(--light-gray);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.card-purchase__date{
+    padding: 20px 50px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+/* Styles for each item purchased */
+.card-purchase__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+}
+
+.card-purchase__name{
+    width: 40%;
+}
+
+.card-purchase__quantity{
+    /* width: 23%; */
+    padding: 10px 25px;
+    margin: 0 20px;
+    border: 1px solid var(--gray);
+    text-align: center;
+}
+
+.card-purchase__price{
+    width: 17%;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
